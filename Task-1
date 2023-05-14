@@ -1,0 +1,257 @@
+<html lang="en">  
+<head>
+    <title>
+         Survey Form using HTML
+    </title>
+ 
+    <style>
+ 
+        /* Build the Body element Font, Alignment */
+        body {
+            background-color:pink;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* adding the elements to the Form (like Color, Padding, Shadow) */
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+           box-shadow: 2px 5px 10px rgba(180,150, 150, 0.5);
+        }
+ 
+        /* build a form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        } 
+ 
+        /*Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color:white;
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display:block;
+            width: 25%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Survey Form</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">Email-Id</label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="DOB" id="label_DOB">Date-of-Birth</label>
+            <input type="text" id=DOB placeholder="Enter date of birth"/>
+        </div>
+        <div class="form-control">
+            <label for="address" id="label_address">Address</label>
+            <input type="text" id="Address" placeholder="Enter your village,town,city" />
+        </div>
+  
+        
+        <div class="form-control">
+            <label for="role" id="label-role">
+                 What are you doing?Are you studying or Working?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="Studies">Studying</option>
+                <option value="Waiting for a job">Searching for a job</option>
+                <option value="Doing a job">Doing a job</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Educational Qualification:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+              <label for="Under Graduation">
+                 <input type="radio" id="UG" name="name">Under Graduation</input>
+              <label for="Post Graduation">
+                 <input type="radio" id="PG" name="name">Post Graduation</input>
+            </label>
+        </div>
+        
+        <div class="form-control">
+            <label>Languages known:
+             <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">HTML</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">CSS</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Angular</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">React</input></label>
+        </div>
+        <div class="form-control">
+            <label>
+                Are you interested in Yoshops?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="yes">
+                <input type="radio"
+                       id="yes"
+                       name="yes">Yes</input>
+            </label>
+            <label for="no">
+                <input type="radio"
+                       id="no"
+                       name="No">No</input>
+            </label>
+            <label for="May be">
+                <input type="radio"
+                       id="May be"
+                       name="May be">May be</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                If yes,how much salary you are expected as an intern/employee?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       name="range of price">5000 to 15000</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       name="range of price">15000 to 30000</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       name="range of price">31000 to 50000</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       name="range of price">51000 to 100000</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                
+        <div class="form-control">
+            <label>
+                Would you recommend our comapany to your friend:
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="yes">
+                <input type="radio"
+                       id="yes"
+                       name="yes">Yes</input>
+            </label>
+            <label for="no">
+                <input type="radio"
+                       id="no"
+                       name="No">No</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="rating" id="label-rating">
+                How much you rate to Yoshops Training Internship and Products & Service from 1 to 5.
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="rating" id="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                </select>
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                What you know about our company?
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comments here">
+            </textarea>
+        </div>
+  
+    
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>
