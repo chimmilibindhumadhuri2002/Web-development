@@ -54,6 +54,7 @@
         <button onclick="sendReferral()">Send Referral Request</button>
     </body>
     </form>
+    <script>
      function sendReferral(){
             var whatsappNumber = document.getElementById("whatsappNumber").value;
             var message = "Hi, This is Bindhu. I am referring you for the Yoshops Data Analyst internship training program. Please go through the link below and book it now.\n\nLink: https://yoshops.com/products/yoshops-referral-gift";
