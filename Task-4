@@ -42,7 +42,6 @@
             background-color: darkgreen;
         }
     </style>
-</head>
 <body>
     <form id="referralForm">
         <label for="whatsappNumber">WhatsApp Number:</label>
@@ -51,8 +50,8 @@
         <input type="text" id="input_link" required>
         <label for="message">Message:</label>
         <textarea id="message" name="message" placeholder="Enter your referral message" required></textarea>
+
         <button onclick="sendReferral()">Send Referral Request</button>
-    </body>
     </form>
     <script>
      function sendReferral(){
@@ -63,5 +62,6 @@
             window.open(whatsappLink);
         }
     </script>
+</head>
 </body>
 </html>
